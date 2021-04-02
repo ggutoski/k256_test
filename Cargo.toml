@@ -1,0 +1,13 @@
+[package]
+name = "k256_test"
+version = "0.1.0"
+authors = ["Gus Gutoski <gus.gutoski@protonmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dev-dependencies]
+k256 = { version = "0", features = ["ecdsa"] }
+curv = { git = "https://github.com/KZen-networks/curv", tag = "v0.2.6", features = ["ec_secp256k1"] }
